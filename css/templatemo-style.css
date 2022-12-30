@@ -405,7 +405,7 @@ a:hover, a:active, a:focus {
   -ms-flex-align: center;
   align-items: center;
   height: 100vh;
-  /*width: 100%;*/
+  width: 100%;
   padding: 0px 45px 0 45px;
 }
 
