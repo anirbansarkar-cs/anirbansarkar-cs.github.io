@@ -376,13 +376,13 @@ a:hover, a:active, a:focus {
   padding-bottom: 18px;
 }
 
-#home .col-md-6 {
-  background: #f1e2d7;
-    /*#E9724C*/
-/* light blue color: #c3eafd; */
-  padding-right: 0;
-  padding-left: 0;
-}
+/*#home .col-md-6 {*/
+/*  background: #f1e2d7;*/
+/*    !*#E9724C*!*/
+/*!* light blue color: #c3eafd; *!*/
+/*  padding-right: 0;*/
+/*  padding-left: 0;*/
+/*}*/
 
 #home .home-img {
   background: url('../images/home-img.jpg') no-repeat;
