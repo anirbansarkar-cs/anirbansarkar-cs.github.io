@@ -711,28 +711,5 @@ http://www.templatemo.com/tm-498-stimulus
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
 
-<script>
-// Make News and Updates sections match About Me height
-window.addEventListener('load', function() {
-    function matchAboutHeight() {
-        const aboutThumb = document.querySelector('#about .about-thumb');
-        const skillThumbs = document.querySelectorAll('#about .skill-thumb');
-        
-        if (aboutThumb && skillThumbs.length > 0) {
-            const aboutHeight = aboutThumb.offsetHeight;
-            skillThumbs.forEach(thumb => {
-                thumb.style.height = aboutHeight + 'px';
-            });
-        }
-    }
-    
-    // Set height initially
-    matchAboutHeight();
-    
-    // Recalculate on window resize
-    window.addEventListener('resize', matchAboutHeight);
-});
-</script>
-
 </body>
 </html>

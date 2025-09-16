@@ -425,11 +425,10 @@ a:hover, a:active, a:focus {
   text-align: justify;
 }
 
-/* Make News and Updates match About Me height using JavaScript approach */
 #about .skill-thumb {
   text-align: justify;
   height: var(--about-height, 600px);
-  overflow-y: auto;
+  overflow: scroll;
   padding: 0 12px 0 12px;
 }
 
