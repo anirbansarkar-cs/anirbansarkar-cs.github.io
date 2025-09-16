@@ -425,24 +425,12 @@ a:hover, a:active, a:focus {
   text-align: justify;
 }
 
-/* Make all About section columns match About Me height */
-#about .row {
-  display: flex;
-  align-items: stretch;
-}
-
-/* Ensure column containers stretch to full height */
-#about .row > [class*="col-"] {
-  display: flex;
-  flex-direction: column;
-}
-
+/* Make News and Updates match About Me height using JavaScript approach */
 #about .skill-thumb {
   text-align: justify;
-  height: 100%;
+  height: var(--about-height, 600px);
   overflow-y: auto;
   padding: 0 12px 0 12px;
-  flex: 1;
 }
 
 /*#about .a {*/
