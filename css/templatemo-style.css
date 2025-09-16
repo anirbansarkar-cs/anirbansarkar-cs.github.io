@@ -425,10 +425,17 @@ a:hover, a:active, a:focus {
   text-align: justify;
 }
 
+/* Make About section columns equal height */
+#about .row {
+  display: flex;
+  align-items: stretch;
+}
+
 #about .skill-thumb {
   text-align: justify;
-  height: 600px;
-  overflow: scroll;
+  height: auto;
+  min-height: 100%;
+  overflow-y: auto;
   padding: 0 12px 0 12px;
 }
 
@@ -476,6 +483,12 @@ a:hover, a:active, a:focus {
   background: white;
 }
 
+/* Make Service section columns equal height */
+#service .row {
+  display: flex;
+  align-items: stretch;
+}
+
 #service .about-thumb{
   /*position: fixed;*/
   /*top: 0;*/
@@ -501,7 +514,9 @@ a:hover, a:active, a:focus {
 #service .skill-thumb {
   /*align-items: center;*/
   text-align: justify;
-  height: 600px;
+  height: auto;
+  min-height: 100%;
+  overflow-y: auto;
   padding: 0 32px 0 32px;
 }
 
