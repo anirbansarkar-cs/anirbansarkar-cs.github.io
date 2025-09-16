@@ -711,5 +711,26 @@ http://www.templatemo.com/tm-498-stimulus
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
 
+<script>
+// Set max-height for News and Updates based on About Me height
+window.addEventListener('load', function() {
+    function setMaxHeight() {
+        const aboutThumb = document.querySelector('#about .about-thumb');
+        
+        if (aboutThumb) {
+            const aboutHeight = aboutThumb.offsetHeight;
+            // Set CSS custom property for max-height
+            document.documentElement.style.setProperty('--about-height', aboutHeight + 'px');
+        }
+    }
+    
+    // Set max-height initially
+    setMaxHeight();
+    
+    // Recalculate on window resize
+    window.addEventListener('resize', setMaxHeight);
+});
+</script>
+
 </body>
 </html>
