@@ -1,0 +1,11 @@
+# Personal working files — not part of the published site
+Screenshot*.png
+cripsri-data-screens.pdf
+
+# LaTeX build artifacts (CV source claude.tex is tracked; build outputs are not)
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
