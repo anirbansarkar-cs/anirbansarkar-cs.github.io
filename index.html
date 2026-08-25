@@ -190,6 +190,23 @@
     </ol>
 
     <div class="vision reveal" data-d="2">
+      <aside class="vision-side">
+        <span class="side-label">In parallel · Crop genomes</span>
+        <h4>Does regulatory grammar transfer across species?</h4>
+        <p>What does a model trained on human genomes know about a plant? Sequence-to-function models
+          are built almost entirely on human and mouse. I'm working on conditional, multi-species
+          models of crop genomes that predict regulatory activity across tissues from sequence, and on
+          using them to design cis-regulatory elements with targeted activity.</p>
+        <ul class="side-list">
+          <li><span>Transfer</span> regulatory grammar is far less conserved than coding sequence.
+            Whether a model carries from one clade to another separates what it learned about
+            regulation from what it memorized about a genome.</li>
+          <li><span>Scale</span> crop genomes are compact and repeat-dense; objectives tuned on human
+            data inherit assumptions about spatial scale that may not hold.</li>
+          <li><span>Evaluation</span> tissue-specific regulation is the capability design needs, and
+            not what the easy metrics measure.</li>
+        </ul>
+      </aside>
       <div class="vision-main">
         <span class="emerging">Where I'm headed</span>
         <h3>Concept-aligned, cross-modal <em>counterfactual</em> generation</h3>
@@ -201,25 +218,6 @@
           and causal intervention, with real stakes for biology and medicine.</p>
         <p class="vision-note">// early and unproven, but the kind of problem worth the next few years.</p>
       </div>
-      <aside class="vision-side">
-        <span class="side-label">In parallel · Crop genomes</span>
-        <h4>Does regulatory grammar transfer across species?</h4>
-        <p>What does a model trained on human genomes know about a plant? Sequence-to-function models
-          are built almost entirely on human and mouse. I'm working on conditional, multi-species
-          models of crop genomes, sorghum and maize, that predict chromatin accessibility and
-          expression across tissues directly from sequence over megabase context, and on using them
-          to design cis-regulatory elements with targeted, tissue-specific activity.</p>
-        <ul class="side-list">
-          <li><span>Transfer</span> regulatory grammar is far less conserved than coding sequence.
-            Whether a model trained on one clade carries to another separates what it has learned
-            about regulation from what it has memorized about a genome.</li>
-          <li><span>Scale</span> crop genomes are compact and repeat-dense, with genes spanning a few
-            kilobases where mammalian genes span hundreds. Architectures and objectives tuned on human
-            data inherit assumptions about spatial scale that may not hold.</li>
-          <li><span>Evaluation</span> tissue-specific regulation is the capability design actually
-            needs, and it is not what the easy within-window metrics measure.</li>
-        </ul>
-      </aside>
     </div>
   </div>
 </section>
