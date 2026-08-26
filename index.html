@@ -24,7 +24,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <script>document.documentElement.classList.add('js');</script>
-<link rel="stylesheet" href="css/site.css?v=20260617">
+<link rel="stylesheet" href="css/site.css?v=20260824">
 
 <!-- Structured data for search / Scholar -->
 <script type="application/ld+json">
@@ -170,7 +170,7 @@
         </div>
       </li>
       <li class="step">
-        <span class="step-when">2023–now · CSHL</span>
+        <span class="step-when">2023–2025 · CSHL</span>
         <h3>Generative modeling for genomics</h3>
         <p>Turning understanding into design: generating regulatory DNA with tunable activity
           through discrete diffusion (D3).</p>
@@ -190,6 +190,23 @@
     </ol>
 
     <div class="vision reveal" data-d="2">
+      <aside class="vision-side">
+        <span class="side-label">In parallel · Crop genomes</span>
+        <h4>Does regulatory grammar transfer across species?</h4>
+        <p>What does a model trained on human genomes know about a plant? Sequence-to-function models
+          are built almost entirely for a handful of model organisms. I'm working on conditional, multi-species
+          models of crop genomes that predict regulatory activity across tissues from sequence, and on
+          using them to design cis-regulatory elements with targeted activity.</p>
+        <ul class="side-list">
+          <li><span>Transfer</span> regulatory grammar is far less conserved than coding sequence.
+            Whether a model carries from one clade to another separates what it learned about
+            regulation from what it memorized about a genome.</li>
+          <li><span>Scale</span> crop genomes are compact and repeat-dense; objectives tuned on
+            model-organism data inherit assumptions about spatial scale that may not hold.</li>
+          <li><span>Evaluation</span> tissue-specific regulation is the capability design needs, and
+            not what the easy metrics measure.</li>
+        </ul>
+      </aside>
       <div class="vision-main">
         <span class="emerging">Where I'm headed</span>
         <h3>Concept-aligned, cross-modal <em>counterfactual</em> generation</h3>
@@ -201,19 +218,6 @@
           and causal intervention, with real stakes for biology and medicine.</p>
         <p class="vision-note">// early and unproven, but the kind of problem worth the next few years.</p>
       </div>
-      <aside class="vision-side">
-        <span class="side-label">In parallel · Evaluation</span>
-        <h4>How do we trust a synthetic genome?</h4>
-        <p>Generative models for DNA are outpacing our ability to judge them. I'm building a general
-          framework that probes synthetic sequences and benchmarks them against the strongest
-          sequence-to-function models, across functional, sequence, and motif-level axes.</p>
-        <ul class="side-list">
-          <li><span>Short-context</span> task-specific oracles like DeepSTARR and lentiMPRA activity,
-            scaled up to genome-wide cis-regulatory elements (Zoonomia), with D3 as a convenient testbed.</li>
-          <li><span>Long-context</span> whether these models truly capture distal enhancer effects,
-            scored against CRISPRi knockdown screens.</li>
-        </ul>
-      </aside>
     </div>
   </div>
 </section>
@@ -239,7 +243,7 @@
       <div class="reveal" data-d="2">
         <p class="card-h">Updates</p>
         <ul class="timeline">
-          <li><span class="when">2026</span><p>“GPA: Generative Population Annealing for Test-Time Sequence Design” accepted as a poster at GenBio 2026, the ICML Workshop on Generative &amp; Agentic AI for Biology.</p></li>
+          <li><span class="when">2026</span><p>“GPA: Generative Population Annealing for Test-Time Sequence Design” selected as a long oral at MLCB 2026; earlier accepted as a poster at GenBio 2026, the ICML Workshop on Generative &amp; Agentic AI for Biology.</p></li>
           <li><span class="when">Apr 2025</span><p>Presented “Understanding DNA Discrete Diffusion for Engineering Regulatory DNA Sequences” at the Workshop on AI for Nucleic Acids, ICLR 2025.</p></li>
           <li><span class="when">Sep 2024</span><p>Long oral “Designing DNA With Tunable Regulatory Activity Using Discrete Diffusion” at MLCB 2024; also featured at the NeurIPS 2024 Workshop on AI for New Drug Modalities.</p></li>
           <li><span class="when">Apr 2023</span><p>Started as computational postdoctoral fellow at Cold Spring Harbor Laboratory.</p></li>
@@ -293,10 +297,10 @@
     <ul class="pub-list">
 
       <li class="pub reveal">
-        <div class="pub-meta"><span class="pub-year">2026</span><span class="venue alt">ICML-GENBIO</span></div>
+        <div class="pub-meta"><span class="pub-year">2026</span><span class="venue">MLCB · Oral</span></div>
         <div>
           <p class="pub-title">GPA: Generative Population Annealing for Test-Time Sequence Design</p>
-          <p class="pub-authors"><span class="me">A. Sarkar</span>, A. Duran, P. K. Koo<span class="pub-tag">new</span></p>
+          <p class="pub-authors"><span class="me">A. Sarkar</span>, A. Duran, P. K. Koo<span class="pub-tag">long oral</span><span class="pub-tag">new</span></p>
           <div class="pub-links">
             <a href="https://openreview.net/forum?id=4JTkToC9Ox" target="_blank" rel="noopener">OpenReview</a>
           </div>
@@ -417,7 +421,7 @@
 <!-- ===================================================== WORKSHOPS -->
 <section id="workshops" class="divider">
   <div class="wrap">
-    <p class="eyebrow reveal">06 — Talks &amp; Workshop Papers</p>
+    <p class="eyebrow reveal">06 — Workshop Papers</p>
     <ul class="ws-list reveal" data-d="1">
       <li><span class="t">GPA: Generative Population Annealing for Test-Time Sequence Design.</span><span class="pub-tag">new</span>
         <span class="v">GenBio 2026 · ICML Workshop on Generative &amp; Agentic AI for Biology.</span>

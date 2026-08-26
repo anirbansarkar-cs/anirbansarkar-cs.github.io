@@ -249,9 +249,11 @@ h1, h2, h3 { font-family: var(--f-display); font-weight: 500; line-height: 1.05;
   border-radius: 22px; padding: clamp(1.8rem, 4vw, 3.2rem);
   background: linear-gradient(150deg, rgba(94,227,206,0.09), rgba(201,242,78,0.035) 55%, transparent 85%);
   display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.8rem, 4vw, 3.4rem); align-items: start; }
-.vision-main { min-width: 0; padding-right: clamp(1.4rem, 2.5vw, 2.2rem); }
-.vision-side { position: relative; z-index: 1; border-left: 1px solid rgba(94,227,206,0.22);
-  padding-left: clamp(1.4rem, 2.5vw, 2.2rem); }
+.vision-main { min-width: 0; padding-left: clamp(1.4rem, 2.5vw, 2.2rem); }
+.vision-side { position: relative; z-index: 1; padding-right: clamp(1.4rem, 2.5vw, 2.2rem); }
+.vision::before { content: ""; position: absolute; left: 50%; width: 1px;
+  top: clamp(1.8rem, 4vw, 3.2rem); bottom: clamp(1.8rem, 4vw, 3.2rem);
+  background: rgba(94,227,206,0.22); pointer-events: none; }
 .side-label { display: inline-block; font-family: var(--f-mono); font-size: 0.64rem;
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--cyan);
   border: 1px solid rgba(94,227,206,0.45); border-radius: 999px; padding: 0.2rem 0.65rem; }
@@ -381,7 +383,9 @@ footer .seq { font-family: var(--f-mono); font-size: 0.72rem; letter-spacing: 0.
 /* ----------------------------------------------------------------- responsive */
 @media (max-width: 900px) {
   .hero-grid, .about-grid, .feed-grid, .xp-grid, .contact-grid, .vision { grid-template-columns: 1fr; }
-  .vision-side { margin-top: 0; border-left: 0; padding-left: 0; border-top: 1px solid rgba(94,227,206,0.22); padding-top: 1.6rem; }
+  .vision-side { margin-top: 0; padding-right: 0; }
+  .vision::before { display: none; }
+  .vision-main { padding-left: 0; border-top: 1px solid rgba(94,227,206,0.22); padding-top: 1.6rem; }
   .journey { grid-template-columns: 1fr; gap: 1.7rem; border-left: 1px solid var(--line); padding-left: 1.6rem; }
   .journey::before { display: none; }
   .step { padding-top: 0; }
