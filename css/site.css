@@ -312,11 +312,12 @@ h1, h2, h3 { font-family: var(--f-display); font-weight: 500; line-height: 1.05;
 /* ----------------------------------------------------------------- publications */
 .pub-list { list-style: none; }
 .pub {
-  display: grid; grid-template-columns: 7.5rem 1fr; gap: 1.6rem;
+  display: grid; grid-template-columns: 11.5rem 1fr; gap: 1.6rem;
   padding: 1.7rem 0; border-top: 1px solid var(--line); transition: border-color 0.3s;
 }
 .pub:hover { border-color: var(--line-2); }
 .pub-meta { display: flex; flex-direction: column; gap: 0.5rem; }
+.venue-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .pub-year { font-family: var(--f-display); font-size: 1.5rem; color: var(--paper); line-height: 1; }
 .venue {
   font-family: var(--f-mono); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase;
