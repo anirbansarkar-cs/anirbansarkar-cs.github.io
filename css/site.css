@@ -328,6 +328,7 @@ h1, h2, h3 { font-family: var(--f-display); font-weight: 500; line-height: 1.05;
 .pub-authors .me { color: var(--paper); font-weight: 600; }
 .pub-tag { font-family: var(--f-mono); font-size: 0.68rem; letter-spacing: 0.05em; color: var(--coral);
   text-transform: uppercase; margin-left: 0.4rem; }
+.pub-tag + .pub-tag::before { content: "\00b7"; margin-right: 0.4rem; color: var(--muted); }
 .pub-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .pub-links a {
   font-family: var(--f-mono); font-size: 0.72rem; letter-spacing: 0.04em;
